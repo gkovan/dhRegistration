@@ -56,6 +56,7 @@ System.out.println("DEBUG: POST called json in body!");
 	 @Path("/{cid:[0-9]*}/{aid:[0-9]*}") // clientId and agentId, numeric 0-9 only data
 	 public Response updateRegistrationRecord(@PathParam("cid") String cid, @PathParam("aid") String aid) 
 	 {
+System.out.println("DEBUG: POST called data in url!");
 		 // get the input parameters
 		 Integer clientId = Integer.valueOf(cid);
 		 Integer agentId  = Integer.valueOf(aid);
@@ -74,6 +75,7 @@ System.out.println("DEBUG: POST called json in body!");
 	 // sends a dh-notification  
  	 private Response sendNotification(Integer clientId, Integer agentId)
 	 {
+System.out.println("DEBUG: sendNotification() called!");
 		 Response res = null;
 		 
 		 try 
