@@ -24,6 +24,7 @@ public class DhRegistration
 	@Produces({MediaType.APPLICATION_JSON})
 	public Response updateRegistrationRecord( String reqBody )
 	{
+System.out.println("DEBUG: POST called json in body!");
 		Response res 		= null;
 		Integer clientId 	= null;
 		Integer agentId  	= null;
